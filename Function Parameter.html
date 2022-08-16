@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <script>
+        //code1
+        var x = myFunction(4, 3);
+        document.getElementById("demo").innerHTML = x;
+        //code2
+        function myFunction(a, b) {
+            return a * b;
+        }
+        //code3
+        function toCelsius(f) {
+            return (5 / 9) * (f - 32);
+        }
+        document.getElementById("demo2").innerHTML = toCelsius(77);
+
+        //code4
+        document.getElementById("demo3").innerHTML =
+            "The temperature is " + myMobile(88, 100) + " Celsius";
+        function myMobile(heat, charge) {
+            return heat * 0.9, charge / heat
+
+        }
+        //code5
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+            fullName: function () {
+                return this.firstName + " " + this.lastName + '' + "id" + '' + this.id;
+                var x = person['fullName']
+
+            },
+
+
+        }
+        var x = person['fullName']
+        document.getElementById("demo4").innerHTML = x
+    </script>
+</body>
+
+</html>

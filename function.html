@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananymous function</title>
+</head>
+
+<body>
+    <p id="demo">hi</p>
+    <p id="demo1">hi</p>
+
+    <script>
+        alert('welcome');
+        var kriS = prompt("please enter the name", "krishna")
+        var s = prompt("please enter the name", "Stable")
+        document.write("welcome" + this.kriS + "" + "the man of" + this.s)
+
+        function paraGraph() {
+            var k = "krishna"
+            var f = "fine"
+            var result = k + "are u" + f;
+            document.getElementById('demo').innerHTML = result;
+        }
+        paraGraph();
+
+
+
+
+
+
+
+
+
+        //function expresion
+        const ennaPanna = function (javaScript, typeScript, Angular) {
+
+            return javaScript + '' + typeScript + '' + Angular
+        }
+
+        document.getElementById('demo1').innerHTML = ennaPanna('learn', 'learn', 'learn');
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+:root {
+    --Browniee: #803d03;
+    --black: rgb(49, 13, 13);
+    --light-color: rgb(228, 198, 198);
+    --border: 1rem solid rgba(0, 0, 0, .3);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+
+}
+
+section {
+    padding: 2rem 7%;
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 7%;
+}
+
+.header .logo {
+    color: var(--black);
+    font-size: 2.5rem;
+    margin-right: auto;
+    font-size: 2.5rem
+}
+
+.header .logo span {
+    color: var(--Browniee);
+}
+
+.header .nav a {
+    color: var(--Browniee);
+    margin-right: 2.5rem;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.header .nav ul {
+    list-style: none;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1.5rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+}
+
+
+@media (max-width:768px) {
+    #menu-bars {
+        display: inline-block;
+    }
+
+    .header .search-form {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border-top: var(--border);
+        width: 100%;
+        border-radius: 0;
+        display: none;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border-top: var(--border);
+        border-bottom: var(--border);
+        background: #fff;
+        display: none;
+
+    }
+
+    .header .navbar.active {
+        display: block;
+
+    }
+
+    .header .navbar a {
+        display: block;
+        background: #f7f7f7;
+        padding: 1.5rem;
+        margin: 1.5rem;
+        border-radius: .5rem;
+        border: var(--border);
+
+
+
+
+    }
+
+
+    @media (max-width:450px) {
+        html {
+            font-size: 50%;
+        }
+
+    }
+
+
+}
